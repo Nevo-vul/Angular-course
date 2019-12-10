@@ -1,0 +1,23 @@
+
+  <div class="item">
+    <div class="title">
+        <p style="text-align:center;">
+      {{item.title}}
+       </p>
+    </div>
+
+      <div class="price">
+        <p style="text-align:center;">
+      {{item.price}}
+        </p>
+    </div>
+
+      <div class="img">
+        <p style="text-align:center;">
+          <img [src]="item.imgUrl">
+        </p>
+    </div>
+  </div>
+
+  <button (click)="addToCart(item)">Add</button>
+  <button (click)="removeFromCart(item)">Remove</button>
